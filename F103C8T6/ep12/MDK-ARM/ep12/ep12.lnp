@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"ep12\startup_stm32f103xb.o"
+"ep12\main.o"
+"ep12\gpio.o"
+"ep12\stm32f1xx_it.o"
+"ep12\stm32f1xx_hal_msp.o"
+"ep12\stm32f1xx_hal_gpio_ex.o"
+"ep12\stm32f1xx_hal.o"
+"ep12\stm32f1xx_hal_rcc.o"
+"ep12\stm32f1xx_hal_rcc_ex.o"
+"ep12\stm32f1xx_hal_gpio.o"
+"ep12\stm32f1xx_hal_dma.o"
+"ep12\stm32f1xx_hal_cortex.o"
+"ep12\stm32f1xx_hal_pwr.o"
+"ep12\stm32f1xx_hal_flash.o"
+"ep12\stm32f1xx_hal_flash_ex.o"
+"ep12\stm32f1xx_hal_exti.o"
+"ep12\system_stm32f1xx.o"
+--strict --scatter "ep12\ep12.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ep12.map" -o ep12\ep12.axf
