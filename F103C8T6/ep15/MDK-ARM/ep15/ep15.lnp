@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"ep15\startup_stm32f103xb.o"
+"ep15\main.o"
+"ep15\gpio.o"
+"ep15\stm32f1xx_it.o"
+"ep15\stm32f1xx_hal_msp.o"
+"ep15\stm32f1xx_hal_gpio_ex.o"
+"ep15\stm32f1xx_hal.o"
+"ep15\stm32f1xx_hal_rcc.o"
+"ep15\stm32f1xx_hal_rcc_ex.o"
+"ep15\stm32f1xx_hal_gpio.o"
+"ep15\stm32f1xx_hal_dma.o"
+"ep15\stm32f1xx_hal_cortex.o"
+"ep15\stm32f1xx_hal_pwr.o"
+"ep15\stm32f1xx_hal_flash.o"
+"ep15\stm32f1xx_hal_flash_ex.o"
+"ep15\stm32f1xx_hal_exti.o"
+"ep15\system_stm32f1xx.o"
+--strict --scatter "ep15\ep15.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ep15.map" -o ep15\ep15.axf
