@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"ep17\startup_stm32f103xb.o"
+"ep17\main.o"
+"ep17\gpio.o"
+"ep17\stm32f1xx_it.o"
+"ep17\stm32f1xx_hal_msp.o"
+"ep17\stm32f1xx_hal_gpio_ex.o"
+"ep17\stm32f1xx_hal.o"
+"ep17\stm32f1xx_hal_rcc.o"
+"ep17\stm32f1xx_hal_rcc_ex.o"
+"ep17\stm32f1xx_hal_gpio.o"
+"ep17\stm32f1xx_hal_dma.o"
+"ep17\stm32f1xx_hal_cortex.o"
+"ep17\stm32f1xx_hal_pwr.o"
+"ep17\stm32f1xx_hal_flash.o"
+"ep17\stm32f1xx_hal_flash_ex.o"
+"ep17\stm32f1xx_hal_exti.o"
+"ep17\system_stm32f1xx.o"
+--strict --scatter "ep17\ep17.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ep17.map" -o ep17\ep17.axf
